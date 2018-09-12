@@ -1,6 +1,6 @@
 # LCNN
-A TensorFlow implementation of light convolutional neural network (LCNN).<br>
-This implementation is aimed to classify between genuine speech (spoken by human) and replayed speech (played by loud speaker). This method was firstly introduced by [1] for replayed speech detection and it has been served as a baseline to evaluate a "speech-enhancement-based" playback attack method [2].
+A TensorFlow implementation of light convolutional neural network (LCNN or light CNN).<br>
+This implementation is aimed to classify between genuine speech (spoken by human) and playback speech (played by loud speaker). LCNN-based playback speech detection was firstly introduced by [1] and it has been served as a playback spoofing countermeasure to evaluate a "speech-enhancement-based" playback attack method [2].
 
 
 # Usage
@@ -13,12 +13,13 @@ This implementation is aimed to classify between genuine speech (spoken by human
 	  --dev_spoof dev_data_spoof_file_list.txt \
 	  --epoch  9 \
 	  --batch_size 64 \
-	  --lr 0.0001 \             # initial learning rate
-	  --dlr 0.9 \               # if classification error rate increases, lr will be decreased by this rate
-	  --keep_prob 0.5           # dropout
+	  --lr 0.0001 \        # initial learning rate
+	  --dlr 0.9 \          # if classification error rate increases, learning rate will be decreased by this rate
+	  --keep_prob 0.5      # dropout
 ```
 
-Each line of "*_file_list.txt" contains a path to a corresponding data file. A data file contains a sequence of spectrogram (see [1] and [2] for details).
+Each line of "*_file_list.txt" contains a path to a corresponding data file. A data file contains a sequence of spectrogram (see [1] and [2] for details).<br>
+"*genuine_file_list.txt" means file list of genuine speech and "*spoof_file_list.txt" means file list of playback speech.
 
 ## Test
 ```bash
