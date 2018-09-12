@@ -19,7 +19,7 @@ This implementation is aimed to classify between genuine speech (spoken by human
 ```
 <br><br>
 Each line of "*file_list.txt" contains a path to a corresponding data file. A data file contains a sequence of spectrogram (see [1] and [2] for details).
-"*genuine_file_list.txt" means file list of genuine speech and "*spoof_file_list.txt" means file list of playback speech.
+"*genuine_file_list.txt" means file list of genuine speech and "\*spoof_file_list.txt" means file list of playback speech.
 "dev_data*" means development dataset used for monitoring classification error rate.
 
 ## Test
