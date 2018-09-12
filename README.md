@@ -18,8 +18,9 @@ This implementation is aimed to classify between genuine speech (spoken by human
 	  --keep_prob 0.5      # dropout
 ```
 
-Each line of "*_file_list.txt" contains a path to a corresponding data file. A data file contains a sequence of spectrogram (see [1] and [2] for details).<br>
-"*genuine_file_list.txt" means file list of genuine speech and "*spoof_file_list.txt" means file list of playback speech.
+Each line of "*_file_list.txt" contains a path to a corresponding data file. A data file contains a sequence of spectrogram (see [1] and [2] for details).<br><br>
+"*genuine_file_list.txt" means file list of genuine speech and "*spoof_file_list.txt" means file list of playback speech.<br><br>
+"dev_data_*" means development dataset used for monitoring classification error rate.
 
 ## Test
 ```bash
