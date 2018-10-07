@@ -32,8 +32,8 @@ Each line of "\*file_list.txt" contains a path to a corresponding data file. A d
 The output file contains a sequence of 2-D vectors and each vector is composed by two probabilities (genuine and playback).
 
 # Authors
-Fuming Fang
-National Institute of Informatics, Japan
+Fuming Fang<br>
+National Institute of Informatics, Japan<br>
 fang@nii.ac.jp
 
 # License
