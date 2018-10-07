@@ -1,4 +1,12 @@
 #! /usr/bin/env python
+###########################################################
+##  Main script                                           #
+###########################################################
+##  Copyright (c) 2018, National Institute of Informatics #
+##  Author:      Fuming Fang                              #
+##  Affiliation: National Institute of Informatics        #
+##  Email:       fang@nii.ac.jp                           #
+###########################################################
 
 import argparse
 import os

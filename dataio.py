@@ -1,3 +1,12 @@
+###########################################################
+##  reading and saving data                               #
+###########################################################
+##  Copyright (c) 2018, National Institute of Informatics #
+##  Author:      Fuming Fang                              #
+##  Affiliation: National Institute of Informatics        #
+##  Email:       fang@nii.ac.jp                           #
+###########################################################
+
 # -*- coding: utf-8 -*-
 
 import numpy as np

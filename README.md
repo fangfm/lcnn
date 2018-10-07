@@ -2,7 +2,6 @@
 A TensorFlow implementation of light convolutional neural network (LCNN or light CNN).<br>
 This implementation is aimed to classify between genuine speech (spoken by human) and playback speech (played by loud speaker). LCNN-based playback speech detection was firstly introduced by [1] and it has been served as a playback spoofing countermeasure to evaluate a "speech-enhancement-based" playback attack method [2].
 
-
 # Usage
 ## Train
 ```bash
@@ -32,6 +31,15 @@ Each line of "\*file_list.txt" contains a path to a corresponding data file. A d
 
 The output file contains a sequence of 2-D vectors and each vector is composed by two probabilities (genuine and playback).
 
+# Authors
+Fuming Fang
+National Institute of Informatics, Japan
+fang@nii.ac.jp
+
+# License
+BSD 3-Clause License
+
 # Reference
 [1] Lavrentyeva, Galina, et al. "Audio replay attack detection with deep learning frameworks." Proc. Interspeech. 2017.<br>
 [2] F. Fang et al., "Transforming acoustic characteristics to deceive playback spoofing countermeasures of speaker verification systems," IEEE International Workshop on Information Forensics and Security (WIFS), 2018.
+

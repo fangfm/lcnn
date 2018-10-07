@@ -1,3 +1,12 @@
+###########################################################
+##  LCNN is defined in this file                          #
+###########################################################
+##  Copyright (c) 2018, National Institute of Informatics #
+##  Author:      Fuming Fang                              #
+##  Affiliation: National Institute of Informatics        #
+##  Email:       fang@nii.ac.jp                           #
+###########################################################
+
 from __future__ import division
 import os
 import time
