@@ -1,0 +1,6 @@
+model_checkpoint_path: "avgan.model-422"
+all_model_checkpoint_paths: "avgan.model-382"
+all_model_checkpoint_paths: "avgan.model-392"
+all_model_checkpoint_paths: "avgan.model-402"
+all_model_checkpoint_paths: "avgan.model-412"
+all_model_checkpoint_paths: "avgan.model-422"

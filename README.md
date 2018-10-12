@@ -21,6 +21,8 @@ Each line of "\*file_list.txt" contains a path to a corresponding data file. A d
 "\*genuine_file_list.txt" means file list of genuine speech and "\*spoof_file_list.txt" means file list of playback speech.
 "dev_data\*" means development dataset used for monitoring classification error rate.
 
+A pre-trained model is included in "checkpoint" folder.
+
 ## Test
 ```bash
 ./main.py \
