@@ -6,7 +6,7 @@ This implementation is aimed to classify between genuine speech (spoken by human
 ## Prepare data
 Silent speech is removed by [VAD](https://github.com/wiseman/py-webrtcvad/) and then spectrogram is extracted by following command line. Although the original work [1] performed normalization, we did not.
 ```
-./prepare_data.m path_to_wavefiles path_to_output
+./prepare_data.m directory_to_wavefiles directory_to_output
 ```
 
 ## Train
