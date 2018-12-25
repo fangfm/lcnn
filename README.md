@@ -3,6 +3,12 @@ A TensorFlow implementation of light convolutional neural network (LCNN or light
 This implementation is aimed to classify between genuine speech (spoken by human) and playback speech (played by loud speaker). LCNN-based playback speech detection was firstly introduced by [1] and it has been served as a playback spoofing countermeasure to evaluate a "speech-enhancement-based" playback attack method [2].
 
 # Usage
+## Prepare data
+Silent speech is removed by [VAD] (https://github.com/wiseman/py-webrtcvad/) and then spectrogram is extracted by following command line. Although the original work [1] performed normalization, we did not.
+```
+./prepare_data.m path_to_wavefiles path_to_output
+```
+
 ## Train
 ```bash
 ./main.py \
