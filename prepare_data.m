@@ -13,13 +13,12 @@ end
 input_dir = argvs{1};
 output_dir = argvs{2};
 
-wavs = dir(strcat(input_dir, '/*.wav'));
-input_dir = strcat(input_dir, '/');
+wavs = dir(fullfile(input_dir, '*.wav'));
 
 hamm_coef = hamming(400);
 
 for i = 1:size(wavs,1)
-  f = fopen(strcat(input_dir, wavs(i).name));
+  f = fopen(fullfile(input_dir, wavs(i).name));
   head = fread(f, 22, 'short');
   data = fread(f, 'short');
   fclose(f);
@@ -57,7 +56,7 @@ for i = 1:size(wavs,1)
   data = [dataCell{:}, residualCell{:}];
   
   name = strrep(wavs(i).name, 'wav', 'bin');
-  f = fopen(strcat(output_dir, name), 'w');
+  f = fopen(fullfile(output_dir, name), 'w');
   fwrite(f, reshape(data', size(data,1)*size(data,2), 1), 'float');
   fclose(f);
 
