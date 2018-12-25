@@ -4,9 +4,9 @@ argvs = argv();
 argc = size(argvs, 1);
 
 if argc != 2
-  printf("--------------------------------------------\n");
+  printf("-------------------------------\n");
   printf("Usage: [input_dir] [output_dir]\n");
-  printf("--------------------------------------------\n");
+  printf("-------------------------------\n");
   return
 end
 
