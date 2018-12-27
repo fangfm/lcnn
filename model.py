@@ -34,12 +34,12 @@ class lcnn(object):
 
     def linear(self, data_in, out_size, name=None, stddev=0.02, bs=0.0):
         with tf.variable_scope(name):
-            weight = tf.get_variable("weight", [data_in.get_shape()[-1], out_size], tf.float32,
+            Matrix = tf.get_variable("Matrix", [data_in.get_shape()[-1], out_size], tf.float32,
                                      tf.contrib.layers.xavier_initializer())
             bias = tf.get_variable("bias", [out_size],
                                    initializer=tf.constant_initializer(bs))
         
-            return tf.matmul(data_in, weight) + bias
+            return tf.matmul(data_in, Matrix) + bias
 
 
     def conv2d(self, data_in, filters, kernel_size, strides, padding='SAME', name=None):
